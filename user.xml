@@ -1,0 +1,216 @@
+<Source>
+   <UserOptions>
+      <UserOption Name="ShowVolumeSettings">1</UserOption>
+      <UserOption Name="BeepKeyboardSettings">0</UserOption>
+      <UserOption Name="ShowKeyboardPopupSettings">1</UserOption>
+      <UserOption Name="ShowKeyboardTraySettings">1</UserOption>
+      <UserOption Name="ShowKeyboardSettings">1</UserOption>
+      <UserOption Name="ShowTrayIcon">1</UserOption>
+      <UserOption Name="ShowBatteryStatusSettings">1</UserOption>
+      <UserOption Name="ShowKeySettings">1</UserOption>
+   </UserOptions>
+   <Apps/>
+   <Devices>
+      <Device Class="Receiver" Model="50331698">
+         <Param AllowGestureInertiaScroll="0" AppSpecific="1" EnableGestureTapToClick="0" EnableLeftEdgeSwipe="0" EnableRightEdgeSwipe="0" EnableTapAndHold="0" EnableTopEdgeSwipe="0" EnableTwoFingerTap="0" EnableTwoFingerZoom="0" EnableXYTracking="0" GestureAcPan="0" GestureAppSwitch="0" GestureBackForward="0" GesturePageUpDown="0" GestureVerticalScroll="0" GestureWinSnap="0" LowBatPercentLevel="5" SmartWheelAppSpecific="1" UserBatteryMode="0" VScrollAcceleration="0" VScrollSpeed="0" VoIPClient=""/>
+         <Buttons/>
+      </Device>
+      <Device DisplayName="Wireless Touch Keyboard K400" Class="KeyboardDevice" Model="33558529" NumberOfButtons="15" ConnectionID="">
+         <Param AllowGestureInertiaScroll="0" AppSpecific="1" DisableCapsLockKey="0" DisableInsertKey="0" DisableNumLockKey="0" DisableScrollLockKey="0" DisableTouchPadWhenKeyboardUsed="0" DisableWindowsStartKey="0" EnableGestureTapToClick="1" EnableLeftEdgeSwipe="1" EnableRightEdgeSwipe="1" EnableTapAndHold="1" EnableTopEdgeSwipe="1" EnableTwoFingerTap="1" EnableTwoFingerZoom="1" EnableXYTracking="0" FLock="0" FnKeyInverted="1" FnKeyInvertedDef="1" GestureAcPan="1" GestureAppSwitch="0" GestureBackForward="0" GesturePageUpDown="0" GestureVerticalScroll="1" GestureWinSnap="0" KeyboardActivityTimeout="500" LowBatPercentLevel="5" NavigationWheelAccel="0" ShowEncryptionWizard="0" SmartWheelAppSpecific="1" UserBatteryMode="0" VScrollAcceleration="0" VScrollSpeed="0" VoIPClient=""/>
+         <Buttons>
+            <Button Number="15728750" Name="Button">
+               <Param IconLoc="Devices\Keyboard\CommonIcons\Desktop" Type="Fkey"/>
+               <Trigger Class="ButtonPress">
+                  <Param Button="15728750" EventType="33554432" FirstRepeatDelay="0" RepeatDelay="0" Silent="0" Type="0"/>
+                  <TriggerState Name="ButtonDownUp" HandlerSet="ShowDesktop">
+                     <Handler Class="showdesktop">
+                        <Param/>
+                     </Handler>
+                  </TriggerState>
+               </Trigger>
+            </Button>
+            <Button Number="15728799" Name="Button">
+               <Param IconLoc="Devices\Keyboard\CommonIcons\switch_apps" Type="Fkey"/>
+               <Trigger Class="ButtonPress">
+                  <Param Button="15728799" EventType="33554432" FirstRepeatDelay="0" RepeatDelay="0" Silent="0" Type="0"/>
+                  <TriggerState Name="ButtonDownUp" HandlerSet="MetroAppSwitch">
+                     <Handler Class="HandlerAppSwitch">
+                        <Param ShowAppWindows="0" ShowUIDlg="1"/>
+                     </Handler>
+                  </TriggerState>
+               </Trigger>
+            </Button>
+            <Button Number="786977" Name="Button">
+               <Param IconLoc="Devices\Keyboard\CommonIcons\search" Type="Fkey"/>
+               <Trigger Class="ButtonPress">
+                  <Param Button="786977" EventType="33554432" FirstRepeatDelay="0" RepeatDelay="0" Silent="0" Type="0"/>
+                  <TriggerState Name="ButtonDownUp" HandlerSet="MetroSearch">
+                     <Handler Class="HandlerMetroSearch">
+                        <Param/>
+                     </Handler>
+                  </TriggerState>
+               </Trigger>
+            </Button>
+            <Button Number="15728805" Name="Button">
+               <Param IconLoc="Devices\Keyboard\CommonIcons\share" Type="Fkey"/>
+               <Trigger Class="ButtonPress">
+                  <Param Button="15728805" EventType="33554432" FirstRepeatDelay="0" RepeatDelay="0" Silent="0" Type="0"/>
+                  <TriggerState Name="ButtonDownUp" HandlerSet="MetroShare">
+                     <Handler Class="KeyStroke">
+                        <Param KeyName="*h"/>
+                     </Handler>
+                  </TriggerState>
+               </Trigger>
+            </Button>
+            <Button Number="15728807" Name="Button">
+               <Param IconLoc="Devices\Keyboard\CommonIcons\devices" Type="Fkey"/>
+               <Trigger Class="ButtonPress">
+                  <Param Button="15728807" EventType="33554432" FirstRepeatDelay="0" RepeatDelay="0" Silent="0" Type="0"/>
+                  <TriggerState Name="ButtonDownUp" HandlerSet="MetroDevices">
+                     <Handler Class="KeyStroke">
+                        <Param KeyName="*k"/>
+                     </Handler>
+                  </TriggerState>
+               </Trigger>
+            </Button>
+            <Button Number="15728806" Name="Button">
+               <Param IconLoc="Devices\Keyboard\CommonIcons\settings" Type="Fkey"/>
+               <Trigger Class="ButtonPress">
+                  <Param Button="15728806" EventType="33554432" FirstRepeatDelay="0" RepeatDelay="0" Silent="0" Type="0"/>
+                  <TriggerState Name="ButtonDownUp" HandlerSet="MetroSettings">
+                     <Handler Class="KeyStroke">
+                        <Param KeyName="*i"/>
+                     </Handler>
+                  </TriggerState>
+               </Trigger>
+            </Button>
+            <Button Number="786614" Name="Previous Track">
+               <Param IconLoc="" Type=""/>
+               <Trigger class="ButtonPress">
+                  <Param Button="786614" EventType="33554432" FirstRepeatDelay="0" RepeatDelay="0" Silent="0" Type="0"/>
+                  <TriggerState Name="ButtonDownUp" HandlerSet="MM REWIND">
+                     <Handler Class="KeystrokeAssignment">
+                        <Param DisplayName="Previous Track" LParam="0" Modifier="0" VirtualKey="177"/>
+                     </Handler>
+                  </TriggerState>
+               </Trigger>
+            </Button>
+            <Button Number="786637" Name="PlayPause">
+               <Param IconLoc="" Type=""/>
+               <Trigger class="ButtonPress">
+                  <Param Button="786637" EventType="33554432" FirstRepeatDelay="0" RepeatDelay="0" Silent="0" Type="0"/>
+                  <TriggerState Name="ButtonDownUp" HandlerSet="MM PLAY">
+                     <Handler Class="KeystrokeAssignment">
+                        <Param DisplayName="PlayPause" LParam="0" Modifier="0" VirtualKey="179"/>
+                     </Handler>
+                  </TriggerState>
+               </Trigger>
+            </Button>
+            <Button Number="786613" Name="Next Track">
+               <Param IconLoc="" Type=""/>
+               <Trigger class="ButtonPress">
+                  <Param Button="786613" EventType="33554432" FirstRepeatDelay="0" RepeatDelay="0" Silent="0" Type="0"/>
+                  <TriggerState Name="ButtonDownUp" HandlerSet="MM NEXT">
+                     <Handler Class="KeystrokeAssignment">
+                        <Param DisplayName="Next Track" LParam="0" Modifier="0" VirtualKey="176"/>
+                     </Handler>
+                  </TriggerState>
+               </Trigger>
+            </Button>
+            <Button Number="786658" Name="Mute">
+               <Param IconLoc="" Type=""/>
+               <Trigger class="ButtonPress">
+                  <Param Button="786658" EventType="33554432" FirstRepeatDelay="0" RepeatDelay="0" Silent="0" Type="0"/>
+                  <TriggerState Name="ButtonDownUp" HandlerSet="VOLUMEMUTE">
+                     <Handler Class="KeystrokeAssignment">
+                        <Param DisplayName="Mute/UnMute" LParam="0" Modifier="0" VirtualKey="173"/>
+                     </Handler>
+                  </TriggerState>
+               </Trigger>
+            </Button>
+            <Button Number="786666" Name="Volume Down Controller">
+               <Param IconLoc="" Type=""/>
+               <Trigger class="ButtonPress">
+                  <Param Button="786666" EventType="33554432" FirstRepeatDelay="600" RepeatDelay="50" Silent="0" Type="0"/>
+                  <TriggerState Name="ButtonDownUp" HandlerSet="VOLUMEDOWN">
+                     <Handler Class="KeystrokeAssignment">
+                        <Param DisplayName="Volume Down" LParam="0" Modifier="0" VirtualKey="174"/>
+                     </Handler>
+                  </TriggerState>
+               </Trigger>
+            </Button>
+            <Button Number="786665" Name="Volume Up Controller">
+               <Param IconLoc="" Type=""/>
+               <Trigger class="ButtonPress">
+                  <Param Button="786665" EventType="33554432" FirstRepeatDelay="600" RepeatDelay="50" Silent="0" Type="0"/>
+                  <TriggerState Name="ButtonDownUp" HandlerSet="VOLUMEUP">
+                     <Handler Class="KeystrokeAssignment">
+                        <Param DisplayName="Volume Up" LParam="0" Modifier="0" VirtualKey="175"/>
+                     </Handler>
+                  </TriggerState>
+               </Trigger>
+            </Button>
+            <Button Number="786819" Name="Button">
+               <Param IconLoc="Devices\Keyboard\CommonIcons\media" Type="Hotkey"/>
+               <Trigger Class="ButtonPress">
+                  <Param Button="786819" EventType="33554432" FirstRepeatDelay="0" RepeatDelay="0" Silent="0" Type="0"/>
+                  <TriggerState Name="ButtonDownUp" HandlerSet="MediaPlayer">
+                     <Handler Class="Media">
+                        <Param Action="MEDIA" DefMediaPlayers="Microsoft.ZuneMusic_8wekyb3d8bbwe!Microsoft.ZuneMusic," MediaClient="" ShowBurnApps="1" ShowNoRemote="1" ShowRecordApps="1" ShowRemote="1" ShowUIDlg="1"/>
+                     </Handler>
+                  </TriggerState>
+               </Trigger>
+            </Button>
+            <Button Number="15728751" Name="Button">
+               <Param IconLoc="Devices\Keyboard\CommonIcons\Lock_PC" Type="Hotkey"/>
+               <Trigger Class="ButtonPress">
+                  <Param Button="15728751" EventType="33554432" FirstRepeatDelay="0" RepeatDelay="0" Silent="0" Type="0"/>
+                  <TriggerState Name="ButtonDownUp" HandlerSet="WindowsLock">
+                     <Handler Class="LockPc">
+                        <Param/>
+                     </Handler>
+                  </TriggerState>
+               </Trigger>
+            </Button>
+            <Button Number="65666" Name="Button">
+               <Param IconLoc="Devices\Keyboard\CommonIcons\Sleep" Type="Hotkey"/>
+               <Trigger Class="ButtonPress">
+                  <Param Button="65666" EventType="33554432" FirstRepeatDelay="0" RepeatDelay="0" Silent="0" Type="0"/>
+                  <TriggerState Name="ButtonDownUp" HandlerSet="StandBySet">
+                     <Handler Class="PowerManagement">
+                        <Param action="0"/>
+                     </Handler>
+                  </TriggerState>
+               </Trigger>
+            </Button>
+         </Buttons>
+      </Device>
+      <Device DisplayName="Wireless Touch Keyboard K400" Class="PointingDevice" Model="16781313" NumberOfButtons="3" ConnectionID="">
+         <Param ACCELERATION="1" AIRACCELERATION="4" AirSpeedX="50" AirSpeedY="50" AllowGestureInertiaScroll="0" AppSpecific="1" ButtonSwapped="0" DPIActive="1" DPIDecreaseButtonNo="0" DPIIncreaseButtonNo="0" DPIResIndex="0" DPIResolutionPresets="" DefaultACCELERATION="1" DistinctAirCursor="1" EnableCentering="1" EnableChauseyBackForward="1" EnableChauseyHorizontalScroll="1" EnableChauseyScrollInertia="1" EnableChauseyVerticalScroll="1" EnableGestureTapToClick="1" EnableLeftEdgeSwipe="1" EnableNaturalScroll="0" EnableRightEdgeSwipe="1" EnableScrollWithInertia="1" EnableSmoothScroll="1" EnableTapAndHold="1" EnableTopEdgeSwipe="1" EnableTwoFingerTap="1" EnableTwoFingerZoom="1" EnableXYTracking="0" GameDeviceSuggestGameMode="0" GameDeviceSuggestOS="0" GameModeButtonAddGame="0" GameModeButtonResDown="0" GameModeButtonResUp="0" GameModeButtonResUpWrap="0" GameModeKeepAcceleration="1" GameModeKeepKeypress="1" GameModeKeepOther="0" GameModeKeepRightLeft="1" GameModeKeepSpeed="1" GameModeNotification="0" GameModeResolutionNbPreset="0" GameModeResolutionPresets="" GameModeResolutionPresetsY="" GameParticipate="0" GameParticipateDefault="0" GamePowerMode="0" GameReportEnabled="1" GameReportRate="2" GameResIndex="2" GameUseAdvanced="0" GestureAcPan="1" GestureAppSwitch="0" GestureBackForward="0" GesturePageUpDown="0" GestureVerticalScroll="1" GestureWinSnap="0" LowBatPercentLevel="5" MaxGameModeResolutionXY="0" MenuLocBottom="-1" MenuLocLeft="-1" MenuLocRight="-1" MenuLocTop="-1" MenuSize="0" OfficePowerMode="0" ScrollSensitivity="2" ShowButtonsPage="0" ShowMouseCursorPage="1" SmartMove="0" SmartWheelAppSpecific="1" SpeedX="50" SpeedY="50" StromboliMice="0" TouchPadMice="0" Trails="0" TrailsLength="0" UserBatteryMode="0" VScrollAcceleration="0" VScrollSpeed="0" VoIPClient="" XYResolutionLinked="1" smartshiftmode="1"/>
+         <Buttons>
+            <Button Number="1" Name="Button">
+               <Param IconLoc="" Type="HIDDEN"/>
+               <Trigger Class="ButtonPress">
+                  <Param Button="1" EventType="16777216" FirstRepeatDelay="0" RepeatDelay="0" Silent="1" Type="0"/>
+                  <TriggerState Name="ButtonDownUp" HandlerSet="LeftClick">
+                     <Handler Class="MouseButton">
+                        <Param ButtonName="PrimaryButton"/>
+                     </Handler>
+                  </TriggerState>
+               </Trigger>
+            </Button>
+            <Button Number="2" Name="Button">
+               <Param IconLoc="" Type="HIDDEN"/>
+               <Trigger Class="ButtonPress">
+                  <Param Button="2" EventType="16777216" FirstRepeatDelay="0" RepeatDelay="0" Silent="1" Type="0"/>
+                  <TriggerState Name="ButtonDownUp" HandlerSet="RightClick">
+                     <Handler Class="MouseButton">
+                        <Param ButtonName="SecondaryButton"/>
+                     </Handler>
+                  </TriggerState>
+               </Trigger>
+            </Button>
+         </Buttons>
+      </Device>
+   </Devices>
+</Source>
